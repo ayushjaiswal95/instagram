@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uploading...</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+    h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .progress-container {
+      width: 80%;
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 25px;
+      margin-bottom: 20px;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: #007bff;
+      animation: load 8s linear forwards;
+    }
+    @keyframes load {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
+    .warning {
+      position: absolute;
+      bottom: 50px;
+      background: red;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Uploading your data...</h1>
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+  <div class="warning">Your files have been encrypted!</div>
+</body>
+</html>
